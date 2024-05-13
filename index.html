@@ -33,7 +33,7 @@
                     
                      <div @click="fPrev" class="prev"></div>
                     <div @click="fNext" class="next"></div>
-                    <div v-for="foto, i in slides" class="thumb " :class="fThumbAttiva(i)" >
+                    <div v-for="foto, i in slides" @click="fThumbClick(i)" class="thumb " :class="fThumbAttiva(i)" >
                         <img :src="foto.image" :alt="foto.image" />
                     </div>
                     <!-- <div class="thumb">
