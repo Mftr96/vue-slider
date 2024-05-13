@@ -29,7 +29,7 @@ createApp({
                 }
             ],
             
-            attiva:2
+            attiva:0,
         }
 
     },
@@ -42,7 +42,23 @@ createApp({
         fThumbAttiva(indice){
             return (indice==this.attiva) ? " active" : "";
  
-        }
+        },
+        //funzione che pasa all'indice successivo
+        fNext(){
+           if(this.attiva<4){
+            this.attiva++;
+           }else if(this.attiva>=4){
+            this.attiva=0
+           }
+        },
+        //funzione che passa all'indice precedente 
+        fPrev(){
+            if(this.attiva>0){
+             this.attiva--;
+            }else if(this.attiva<=0){
+             this.attiva=4
+            }
+         }
       
     }
 }).mount("#app");

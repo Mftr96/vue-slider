@@ -31,8 +31,8 @@
                 <!-- creo il ciclo v-for per mettere le slide  -->
                 <div  class="thumbs" >
                     
-                     <div class="prev"></div>
-                    <div class="next"></div>
+                     <div @click="fPrev" class="prev"></div>
+                    <div @click="fNext" class="next"></div>
                     <div v-for="foto, i in slides" class="thumb " :class="fThumbAttiva(i)" >
                         <img :src="foto.image" :alt="foto.image" />
                     </div>

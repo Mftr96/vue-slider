@@ -32,3 +32,5 @@ esecuzione milestone 1:
 milestone 2
 -rimuovo le thumbnail dall'HTML
 -scrivo un ciclo v-for nel div thumbs per creare le thumbnail in pagina 
+----------------
+milestone 3
