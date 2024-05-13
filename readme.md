@@ -27,4 +27,8 @@ Il riciclo spesso va a braccetto con le funzioni! Sapendole sfruttare bene, l'es
 esecuzione milestone 1:
 -inizializzo vue copiando il codice di parenza
 -inserisco l'array nei data
--inserisco un tag img in html con l'utlizzo di v-for
+-modifico il div items con il v-for e modifico l'h3 ed il p
+------------------------
+milestone 2
+-rimuovo le thumbnail dall'HTML
+-scrivo un ciclo v-for nel div thumbs per creare le thumbnail in pagina 

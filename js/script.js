@@ -29,13 +29,19 @@ createApp({
                 }
             ],
             
-            attiva:0
+            attiva:2
         }
 
     },
     methods:{
-        fAttiva(indice){
-            return (indice==this.attiva) ? "active" : "none";
+        //scrivo funzione che rende l'immagine ativa 
+        fImgAttiva(indice){
+            return (indice==this.attiva) ? "block" : "none";
+        },
+        //funzione che rendela thumbnail attiva
+        fThumbAttiva(indice){
+            return (indice==this.attiva) ? " active" : "";
+ 
         }
       
     }
